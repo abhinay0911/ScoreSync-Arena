@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Score Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Score Dashboard</h2>
+
+<h3 id="round">Round 1</h3>
+
+<table id="scoreTable">
+<tr>
+<th>Player</th>
+<th>Round Score</th>
+<th>Total Score</th>
+<th>Status</th>
+</tr>
+</table>
+
+<button id="submitBtn" onclick="submitRound()">Submit Round</button>
+
+<h2 id="winner"></h2>
+
+<!-- ✅ Hidden initially -->
+<div id="controls" style="display:none;">
+<button onclick="resetScores()">Reset Scores</button>
+<button onclick="resetGame()">Reset Game</button>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
